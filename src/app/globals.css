@@ -1,26 +1,121 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --radius: 0.75rem;
+  --background: oklch(0.16 0.03 260);
+  --background-deep: oklch(0.11 0.025 260);
+  --foreground: oklch(0.95 0.02 85);
+  --card: oklch(0.20 0.03 260);
+  --card-foreground: oklch(0.95 0.02 85);
+  --popover: oklch(0.18 0.03 260);
+  --popover-foreground: oklch(0.95 0.02 85);
+  --primary: oklch(0.78 0.16 65);
+  --primary-foreground: oklch(0.16 0.03 260);
+  --secondary: oklch(0.24 0.035 260);
+  --secondary-foreground: oklch(0.95 0.02 85);
+  --muted: oklch(0.22 0.03 260);
+  --muted-foreground: oklch(0.72 0.02 85);
+  --accent: oklch(0.78 0.16 65);
+  --accent-foreground: oklch(0.16 0.03 260);
+  --destructive: oklch(0.6 0.22 25);
+  --destructive-foreground: oklch(0.98 0.01 85);
+  --border: oklch(0.95 0.02 85 / 12%);
+  --input: oklch(0.95 0.02 85 / 14%);
+  --ring: oklch(0.78 0.16 65);
+  --gradient-hero: radial-gradient(ellipse at 50% 30%, oklch(0.78 0.16 65 / 0.18), transparent 60%), linear-gradient(180deg, oklch(0.18 0.035 260) 0%, oklch(0.10 0.025 260) 100%);
+  --gradient-ember: linear-gradient(135deg, oklch(0.82 0.17 70), oklch(0.65 0.18 50));
+  --shadow-glow: 0 0 80px -10px oklch(0.78 0.16 65 / 0.45);
+  --shadow-card: 0 20px 50px -20px oklch(0.05 0.02 260 / 0.8);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-cormorant), ui-serif, Georgia, serif;
+    letter-spacing: -0.01em;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) translateX(0); opacity: 0.4; }
+  50% { transform: translateY(-30px) translateX(10px); opacity: 0.9; }
+}
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.08); }
+}
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@utility bg-hero {
+  background: var(--gradient-hero);
+}
+@utility text-ember {
+  background: var(--gradient-ember);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+@utility shadow-glow {
+  box-shadow: var(--shadow-glow);
+}
+@utility shadow-card {
+  box-shadow: var(--shadow-card);
+}
+@utility animate-float-slow {
+  animation: float-slow 9s ease-in-out infinite;
+}
+@utility animate-glow-pulse {
+  animation: glow-pulse 6s ease-in-out infinite;
+}
+@utility animate-rise-in {
+  animation: rise-in 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }

@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "title": "Mologrind Studios — Mundos que Vale la Pena Explorar",
+    "description": "Un estudio indie de videojuegos que crea mundos inmersivos, aventuras memorables y experiencias significativas inspiradas en la imaginación y el descubrimiento."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "projects": "Proyectos",
+    "vision": "Visión",
+    "contact": "Contacto",
+    "followJourney": "Síguenos"
+  },
+  "hero": {
+    "eyebrow": "Estudio Indie de Videojuegos",
+    "heading": "Mundos que Vale la Pena <em>Explorar</em>",
+    "subtext": "Mologrind Studios crea mundos inmersivos, aventuras memorables y experiencias significativas inspiradas en la imaginación, la curiosidad y el descubrimiento.",
+    "cta1": "Descubre Nuestra Visión",
+    "cta2": "Ver Futuros Proyectos"
+  },
+  "about": {
+    "label": "Nosotros",
+    "heading": "Nacido de <em>una Historia</em>",
+    "body": "Mologrind fue imaginado originalmente como un lugar de fantasía en una historia personal — un reino oculto más allá de la niebla y la montaña. Con el tiempo, se convirtió en la base de una visión creativa: construir juegos que inspiren asombro, exploración y experiencias que valgan la pena recordar.",
+    "foundationsLabel": "Nuestros Pilares",
+    "pillars": ["Creatividad", "Exploración", "Construcción de Mundos", "Juego Significativo"]
+  },
+  "projects": {
+    "label": "Proyectos",
+    "heading": "Futuras <em>Aventuras</em>",
+    "subtext": "Vislumbres de los mundos que toman forma en nuestro taller. Cada uno es un capítulo de un viaje más largo.",
+    "comingSoon": "Próximamente",
+    "items": [
+      {
+        "title": "Starlight Odyssey",
+        "desc": "Una experiencia atmosférica de exploración espacial.",
+        "image": "project-starlight.jpg"
+      },
+      {
+        "title": "Proyecto de Fantasía Sin Título",
+        "desc": "Descubre los secretos olvidados de Mologrind.",
+        "image": "project-fantasy.jpg"
+      },
+      {
+        "title": "Laboratorio de Prototipos",
+        "desc": "Mecánicas experimentales y prototipos creativos.",
+        "image": "project-lab.jpg"
+      }
+    ]
+  },
+  "vision": {
+    "label": "Visión",
+    "heading": "Por Qué <em>Creamos</em>",
+    "pillars": [
+      {
+        "title": "Explorar",
+        "body": "Crear mundos que recompensen la curiosidad."
+      },
+      {
+        "title": "Descubrir",
+        "body": "Animar a los jugadores a descubrir historias ocultas."
+      },
+      {
+        "title": "Recordar",
+        "body": "Diseñar experiencias que permanezcan con los jugadores."
+      }
+    ]
+  },
+  "contact": {
+    "label": "Contacto",
+    "heading": "Únete al <em>Viaje</em>",
+    "subtext": "Estamos al comienzo de nuestra aventura. Sigue nuestro progreso y sé parte de los mundos que creamos.",
+    "youtube": "YouTube",
+    "discord": "Discord",
+    "twitter": "X / Twitter",
+    "email": "Correo"
+  },
+  "footer": {
+    "studioName": "MOLOGRIND STUDIOS",
+    "tagline": "Todo mundo comienza con una historia.",
+    "copyright": "© {year} Mologrind Studios. Todos los derechos reservados."
+  }
+}

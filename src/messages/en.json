@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "title": "Mologrind Studios — Worlds Worth Exploring",
+    "description": "An indie game studio crafting immersive worlds, memorable adventures, and meaningful experiences inspired by imagination and discovery."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "vision": "Vision",
+    "contact": "Contact",
+    "followJourney": "Follow Our Journey"
+  },
+  "hero": {
+    "eyebrow": "Indie Game Studio",
+    "heading": "Worlds Worth <em>Exploring</em>",
+    "subtext": "Mologrind Studios creates immersive worlds, memorable adventures, and meaningful experiences inspired by imagination, curiosity, and discovery.",
+    "cta1": "Discover Our Vision",
+    "cta2": "See Future Projects"
+  },
+  "about": {
+    "label": "About",
+    "heading": "Built From <em>a Story</em>",
+    "body": "Mologrind was originally imagined as a fantasy location in a personal story — a kingdom hidden beyond mist and mountain. Over time, it became the foundation for a creative vision: building games that inspire wonder, exploration, and experiences worth remembering.",
+    "foundationsLabel": "Our Foundations",
+    "pillars": ["Creativity", "Exploration", "Worldbuilding", "Meaningful Gameplay"]
+  },
+  "projects": {
+    "label": "Projects",
+    "heading": "Future <em>Adventures</em>",
+    "subtext": "Glimpses of the worlds taking shape in our workshop. Each is a chapter of a longer journey.",
+    "comingSoon": "Coming Soon",
+    "items": [
+      {
+        "title": "Starlight Odyssey",
+        "desc": "Atmospheric space exploration experience.",
+        "image": "project-starlight.jpg"
+      },
+      {
+        "title": "Untitled Fantasy Project",
+        "desc": "Discover the forgotten secrets of Mologrind.",
+        "image": "project-fantasy.jpg"
+      },
+      {
+        "title": "Prototype Laboratory",
+        "desc": "Experimental mechanics and creative prototypes.",
+        "image": "project-lab.jpg"
+      }
+    ]
+  },
+  "vision": {
+    "label": "Vision",
+    "heading": "Why We <em>Create</em>",
+    "pillars": [
+      {
+        "title": "Explore",
+        "body": "Creating worlds that reward curiosity."
+      },
+      {
+        "title": "Discover",
+        "body": "Encouraging players to uncover hidden stories."
+      },
+      {
+        "title": "Remember",
+        "body": "Designing experiences that stay with players."
+      }
+    ]
+  },
+  "contact": {
+    "label": "Contact",
+    "heading": "Join the <em>Journey</em>",
+    "subtext": "We are at the beginning of our adventure. Follow our progress and be part of the worlds we create.",
+    "youtube": "YouTube",
+    "discord": "Discord",
+    "twitter": "X / Twitter",
+    "email": "Email"
+  },
+  "footer": {
+    "studioName": "MOLOGRIND STUDIOS",
+    "tagline": "Every world begins with a story.",
+    "copyright": "© {year} Mologrind Studios. All rights reserved."
+  }
+}
