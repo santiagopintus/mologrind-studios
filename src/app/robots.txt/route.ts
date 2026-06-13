@@ -1,5 +1,7 @@
+export const dynamic = 'force-static';
+
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://santiagopintus.github.io/mologrind-studios';
 
   const robots = `User-agent: *
 Allow: /
@@ -7,9 +9,6 @@ Allow: /
 Sitemap: ${baseUrl}/sitemap.xml`;
 
   return new Response(robots, {
-    headers: {
-      'Content-Type': 'text/plain',
-      'Cache-Control': 'public, max-age=3600, s-maxage=3600',
-    },
+    headers: { 'Content-Type': 'text/plain' },
   });
 }
