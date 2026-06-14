@@ -10,7 +10,7 @@ export default async function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 md:flex-row">
         <div className="flex items-center gap-3">
           <Image
-            src="/images/mologrind-logo.png"
+            src="./images/mologrind-logo.png"
             alt=""
             width={32}
             height={32}

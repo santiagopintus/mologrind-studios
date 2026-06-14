@@ -33,7 +33,7 @@ export default function Projects() {
               <article className="group relative overflow-hidden rounded-2xl border border-border bg-card/50 shadow-card transition-all duration-500 hover:-translate-y-1 hover:border-primary/40">
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
-                    src={`/images/${project.image}`}
+                    src={`./images/${project.image}`}
                     alt={project.title}
                     fill
                     loading="lazy"

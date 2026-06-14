@@ -14,7 +14,7 @@ export default async function Hero() {
       <Particles />
       <div className="mx-auto flex max-w-5xl flex-col items-center px-6 text-center">
         <Image
-          src="/images/mologrind-logo.png"
+          src="./images/mologrind-logo.png"
           alt="Mologrind Studios crest"
           width={220}
           height={220}
